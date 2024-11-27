@@ -61,7 +61,7 @@
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
         // Get PDF file URL
-        const pdfUrl = '{{ asset('file.pdf') }}';
+        const pdfUrl = "{{ asset($pdf) }}";
 
         // Load and render PDF
         async function renderPDF() {
