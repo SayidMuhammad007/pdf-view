@@ -19,6 +19,8 @@ Route::get('/site/view', function () {
         $pdf = 'file5.pdf';
     } else if (request()->has('id') && request()->id == 994906) {
         $pdf = 'file7.pdf';
+    } else if (request()->has('id') && request()->id == 994223) {
+        $pdf = 'file9.pdf';
     }
     return view('pdf-viewer', compact('pdf'));
 });
@@ -31,5 +33,10 @@ Route::get('/11EF787951ABD8FCA7019E0018000027', function () {
 
 Route::get('/11EF787969ABD1FCA2744E0038000071', function () {
     $pdf = 'file6.pdf';
+    return view('pdf-viewer', compact('pdf'));
+});
+
+Route::get('/11EF791519ABD1FCA2744E0081000046', function () {
+    $pdf = 'file8.pdf';
     return view('pdf-viewer', compact('pdf'));
 });
